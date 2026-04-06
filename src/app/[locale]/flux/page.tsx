@@ -58,41 +58,34 @@ export default function FluxPage() {
   return (
     <div className="overflow-hidden">
       {/* ===== HERO ===== */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-[#0a1628] via-[#1B3A5C] to-[#0d2a45]">
-        {/* Decorative background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#00D4FF]/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#00D4FF]/5 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#00D4FF]/3 rounded-full blur-3xl" />
-        </div>
-
+      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-white via-white to-[#1B3A5C]">
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
             {/* Pilot badge */}
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#00D4FF]/10 border border-[#00D4FF]/20 text-[#00D4FF] text-sm font-medium mb-8">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1B3A5C]/10 border border-[#1B3A5C]/20 text-[#1B3A5C] text-sm font-medium mb-8">
               <span className="w-2 h-2 rounded-full bg-[#00D4FF] animate-pulse" />
               {t("pilotBadge")}
             </span>
 
-            {/* Logo */}
-            <div className="mb-8">
+            {/* Logo - large on white background */}
+            <div className="mb-10">
               <Image
-                src="/logos/flux-white.png"
+                src="/logos/flux.jpg"
                 alt="Flux"
-                width={200}
-                height={60}
-                className="h-14 w-auto"
+                width={360}
+                height={120}
+                className="h-24 md:h-32 w-auto"
                 priority
               />
             </div>
 
             {/* Tagline */}
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-[#1B3A5C] mb-6 tracking-tight">
               {t("tagline")}
             </h1>
 
             {/* Description */}
-            <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl">
+            <p className="text-xl md:text-2xl text-slate-500 mb-10 leading-relaxed max-w-2xl">
               {t("heroDescription")}
             </p>
 
@@ -111,7 +104,7 @@ export default function FluxPage() {
                 href={t("loginUrl")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border border-slate-500 text-white font-semibold text-lg hover:border-[#00D4FF]/50 hover:text-[#00D4FF] transition-all"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border border-[#1B3A5C]/30 text-[#1B3A5C] font-semibold text-lg hover:border-[#00D4FF] hover:text-[#00D4FF] transition-all"
               >
                 {t("ctaLogin")}
               </a>
@@ -119,8 +112,6 @@ export default function FluxPage() {
           </div>
         </div>
 
-        {/* Bottom gradient fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
       </section>
 
       {/* ===== VALUE PROPOSITIONS ===== */}
