@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 44" fill="none">
+  <!-- 3D Cube -->
+  <path d="M20 6 L36 0 L36 16 L20 22 Z" fill="#1B3A5C"/>
+  <path d="M4 14 L20 6 L20 22 L4 30 Z" fill="#243F5C"/>
+  <path d="M20 22 L36 16 L36 30 L20 38 Z" fill="#162D45"/>
+  <path d="M20 22 L20 38 M20 22 L4 14 M20 22 L36 16" stroke="#00D4FF" stroke-width="1.5"/>
+  <path d="M20 6 L36 0 M20 6 L4 14 M4 30 L20 38 L36 30" stroke="#00D4FF" stroke-width="1"/>
+</svg>

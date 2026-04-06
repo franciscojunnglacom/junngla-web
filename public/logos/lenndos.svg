@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
+  <defs>
+    <linearGradient id="lenndos-grad" x1="0" y1="0" x2="200" y2="0">
+      <stop offset="0%" stop-color="#7BA4E0"/>
+      <stop offset="35%" stop-color="#4DC8E8"/>
+      <stop offset="70%" stop-color="#3DD9C0"/>
+      <stop offset="100%" stop-color="#5CE0A0"/>
+    </linearGradient>
+  </defs>
+  <text x="0" y="34" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700" fill="url(#lenndos-grad)">LenndOS</text>
+</svg>

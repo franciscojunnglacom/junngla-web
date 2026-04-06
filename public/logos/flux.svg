@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" fill="none">
+  <!-- 3D Cube -->
+  <g transform="translate(5,3)">
+    <!-- Top face -->
+    <path d="M20 8 L36 0 L36 16 L20 24 Z" fill="#1B3A5C"/>
+    <!-- Left face -->
+    <path d="M4 16 L20 8 L20 24 L4 32 Z" fill="#243F5C"/>
+    <!-- Right face -->
+    <path d="M20 24 L36 16 L36 32 L20 40 Z" fill="#162D45"/>
+    <!-- Cyan edges -->
+    <path d="M20 8 L36 0 M20 8 L4 16 M20 8 L20 24 M20 24 L4 32 M20 24 L36 16 M20 40 L4 32 M20 40 L36 32" stroke="#00D4FF" stroke-width="1.2"/>
+    <!-- Center Y highlight -->
+    <path d="M20 24 L20 40 M20 24 L4 16 M20 24 L36 16" stroke="#00D4FF" stroke-width="1.5"/>
+  </g>
+  <!-- FLUX text -->
+  <text x="56" y="35" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700" fill="#00D4FF" letter-spacing="2">FLUX</text>
+</svg>

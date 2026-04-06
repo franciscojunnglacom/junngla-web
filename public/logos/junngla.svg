@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" fill="none">
+  <!-- Chameleon body -->
+  <path d="M8 38 C8 38 12 10 28 12 C36 12 38 20 36 26 C34 32 28 36 22 36 C18 36 16 34 16 30" stroke="url(#chameleon-grad)" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Chameleon tail curl -->
+  <path d="M8 38 C4 42 8 46 12 44 C16 42 14 38 10 38" stroke="url(#chameleon-grad)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Chameleon eye -->
+  <circle cx="30" cy="18" r="2.5" fill="#7B4F9E"/>
+  <!-- Text -->
+  <text x="48" y="36" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700">
+    <tspan fill="#7B4F9E">Junng</tspan><tspan fill="#6B7280">la</tspan>
+  </text>
+  <defs>
+    <linearGradient id="chameleon-grad" x1="0" y1="0" x2="40" y2="40">
+      <stop offset="0%" stop-color="#7B4F9E"/>
+      <stop offset="100%" stop-color="#6B7280"/>
+    </linearGradient>
+  </defs>
+</svg>
