@@ -64,8 +64,7 @@ export function Navbar() {
             <Link href="/servicios" className={`text-sm font-medium transition-colors ${pathname === "/servicios" ? "text-gray-900" : "text-gray-600 hover:text-gray-900"}`}>{t("services")}</Link>
             <Link href="/nosotros" className={`text-sm font-medium transition-colors ${pathname === "/nosotros" ? "text-gray-900" : "text-gray-600 hover:text-gray-900"}`}>{t("about")}</Link>
             <Link href="/contacto" className={`text-sm font-medium transition-colors ${pathname === "/contacto" ? "text-gray-900" : "text-gray-600 hover:text-gray-900"}`}>{t("contact")}</Link>
-            <Link href="/acceso" className={`text-sm font-medium transition-colors ${pathname === "/acceso" ? "text-gray-900" : "text-gray-600 hover:text-gray-900"}`}>{t("access")}</Link>
-            <Link href="/contacto" className="inline-flex items-center justify-center rounded-lg bg-junngla-purple px-4 py-2 text-sm font-medium text-white hover:bg-junngla-purple/90 transition-colors">{t("cta")}</Link>
+            <Link href="/acceso" className="inline-flex items-center justify-center rounded-lg bg-junngla-purple px-4 py-2 text-sm font-medium text-white hover:bg-junngla-purple/90 transition-colors">{t("access")}</Link>
           </div>
 
           <button className="md:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -85,7 +84,7 @@ export function Navbar() {
               <Link href="/acceso" className="block px-3 py-2 text-sm text-gray-600" onClick={() => setMobileOpen(false)}>{t("access")}</Link>
             </div>
             <div className="pt-2 px-3">
-              <Link href="/contacto" className="block text-center rounded-lg bg-junngla-purple px-4 py-2 text-sm font-medium text-white" onClick={() => setMobileOpen(false)}>{t("cta")}</Link>
+              <Link href="/acceso" className="block text-center rounded-lg bg-junngla-purple px-4 py-2 text-sm font-medium text-white" onClick={() => setMobileOpen(false)}>{t("access")}</Link>
             </div>
           </div>
         )}

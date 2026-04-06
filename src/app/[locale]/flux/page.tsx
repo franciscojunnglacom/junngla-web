@@ -48,11 +48,11 @@ export default function FluxPage() {
   ];
 
   const acquirers = [
-    { nameKey: "acquirerTransbank", statusKey: "acquirerTransbankStatus", active: true },
-    { nameKey: "acquirerGetnet", statusKey: "acquirerGetnetStatus", active: false },
-    { nameKey: "acquirerCompraAqui", statusKey: "acquirerCompraAquiStatus", active: false },
-    { nameKey: "acquirerBciPagos", statusKey: "acquirerBciPagosStatus", active: false },
-    { nameKey: "acquirerKlap", statusKey: "acquirerKlapStatus", active: false },
+    { nameKey: "acquirerTransbank", statusKey: "acquirerTransbankStatus", active: true, logo: "/logos/acquirers/transbank.png" },
+    { nameKey: "acquirerGetnet", statusKey: "acquirerGetnetStatus", active: false, logo: "/logos/acquirers/getnet.png" },
+    { nameKey: "acquirerCompraAqui", statusKey: "acquirerCompraAquiStatus", active: false, logo: "/logos/acquirers/compraaqui.png" },
+    { nameKey: "acquirerBciPagos", statusKey: "acquirerBciPagosStatus", active: false, logo: "/logos/acquirers/bcipagos.png" },
+    { nameKey: "acquirerKlap", statusKey: "acquirerKlapStatus", active: false, logo: "/logos/acquirers/klap.png" },
   ];
 
   return (
@@ -436,20 +436,9 @@ export default function FluxPage() {
                     : "border-slate-200 bg-white/50"
                 }`}
               >
-                <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center ${
-                    acq.active ? "bg-[#00D4FF]/10" : "bg-slate-100"
-                  }`}
-                >
-                  <CreditCard
-                    className={`w-6 h-6 ${
-                      acq.active ? "text-[#00D4FF]" : "text-slate-400"
-                    }`}
-                  />
+                <div className={`h-12 flex items-center justify-center ${!acq.active ? "opacity-40 grayscale" : ""}`}>
+                  <Image src={acq.logo} alt={t(acq.nameKey)} width={100} height={40} className="h-8 w-auto object-contain" />
                 </div>
-                <span className="text-sm font-semibold text-slate-900 text-center">
-                  {t(acq.nameKey)}
-                </span>
                 <span
                   className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${
                     acq.active

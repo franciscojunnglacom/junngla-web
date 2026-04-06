@@ -123,6 +123,13 @@ export default function LenndosPage() {
         </div>
       </section>
 
+      {/* Visit Website */}
+      <section className="py-12 bg-gray-50 text-center">
+        <a href="https://www.junngla.com/lenndos" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-lenndos-cyan font-semibold hover:underline text-lg">
+          Visitar www.junngla.com/lenndos <ArrowRight className="h-5 w-5" />
+        </a>
+      </section>
+
       {/* CTA */}
       <section className="py-24 bg-gradient-to-r from-lenndos-blue via-lenndos-cyan to-lenndos-green text-white text-center">
         <div className="max-w-7xl mx-auto px-6">
